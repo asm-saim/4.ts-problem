@@ -4,8 +4,8 @@ interface Type {
   category: string;
 }
 
-const findProducts = (type: Type[], category: string): any => {
-  let filteredProducts = type.filter(
+const findProducts = (type: Type[], category: string): Type[] => {
+  const filteredProducts: Type[] = type.filter(
     (product) => category === product.category,
   );
   return filteredProducts;
