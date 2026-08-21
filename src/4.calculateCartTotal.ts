@@ -15,6 +15,12 @@ const calculateCartTotal = (products: Product[]): number => {
   return total;
 };
 
-const products: Product[] = [];
+// const products: Product[] = [];
+
+const products = [
+  { name: "Keyboard", price: 1500 },
+  { name: "Mouse", price: 800 },
+  { name: "USB Cable", price: 300 },
+];
 
 console.log(calculateCartTotal(products));
