@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const findProducts = (type, category) => {
-    let filteredProducts = type.filter((product) => category === product.category);
+    const filteredProducts = type.filter((product) => category === product.category);
     return filteredProducts;
 };
 const products = [

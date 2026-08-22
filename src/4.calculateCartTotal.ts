@@ -10,7 +10,7 @@ const calculateCartTotal = (products: Product[]): number => {
   //   }
   //   return total;
 
-  let total = products.reduce((acc, item) => acc + item.price, 0);
+  let total: number = products.reduce((acc: number, item: Product) => acc + item.price, 0);
 
   return total;
 };
